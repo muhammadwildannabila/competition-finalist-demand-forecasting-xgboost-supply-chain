@@ -8,6 +8,10 @@
 ![Time Series](https://img.shields.io/badge/Time-Series-Forecasting-purple?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Finalist%20Competition-gold?style=for-the-badge)
 
+### 🟡 Competition Project (Data Challenge / Hackathon)
+
+🏆 **Finalist — Big Data Analytics Competition (FESMARO), Universitas Negeri Malang 2025**
+
 ### 📦 Data Science | Forecasting | Supply Chain Analytics
 
 </div>
@@ -79,7 +83,7 @@ The analytical workflow follows a structured data science lifecycle:
 ## 📊 Exploratory Data Analysis
 
 ### 🔹 Demand Time Series Pattern
-![Time Series](assets/time-series-comparison.png)
+![Time Series](assets/time_series_comparison.png)
 
 **Insight**
 - Demand is relatively stable across periods  
@@ -89,7 +93,7 @@ The analytical workflow follows a structured data science lifecycle:
 ---
 
 ### 🔹 Product Contribution Analysis
-![Seasonal](assets/top-product-demand.png)
+![Seasonal](assets/top_product_demand.png)
 
 **Insight**
 - *Perfect Rip Deck* contributes **>20% of total demand**  
@@ -116,7 +120,7 @@ These features significantly influence demand prediction.
 ## 🤖 Modeling & Evaluation
 
 ### 🔹 Model Performance Comparison
-![MAPE](assets/model-comparison.png)
+![MAPE](assets/model_comparison.png)
 
 | Model | MAPE |
 |------|------|
@@ -131,7 +135,7 @@ These features significantly influence demand prediction.
 ---
 
 ### 🔹 Actual vs Predicted (XGBoost)
-![Scatter](assets/prediction-comparison.png)
+![Scatter](assets/prediction_comparison.png)
 
 **Insight**
 - Predictions align closely with actual values  
@@ -140,7 +144,7 @@ These features significantly influence demand prediction.
 ---
 
 ### 🔹 Time Series Model Comparison
-![TS](assets/time-series-comparison.png)
+![TS](assets/time_series_comparison.png)
 
 **Insight**
 - Traditional models fail to capture structural change  
@@ -214,7 +218,11 @@ This solution offers measurable benefits:
 
 ## 🏁 Conclusion
 
-> Machine learning-based forecasting—especially **Tuned XGBoost**—proves highly effective in handling **dynamic and disrupted demand patterns**.
+Tuned XGBoost demonstrates superior performance in forecasting demand under dynamic and disrupted conditions, outperforming traditional time series models. 
+
+The findings confirm that demand is not random, but driven by key factors such as product dependency, discount strategy, and delivery risk. 
+
+This approach enables businesses to shift from reactive forecasting to **proactive, data-driven supply chain decision-making**.
 
 This project demonstrates how **data-driven approaches can transform supply chain operations into intelligent, adaptive systems**.
 
