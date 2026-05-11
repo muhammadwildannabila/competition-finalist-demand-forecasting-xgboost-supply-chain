@@ -1,130 +1,96 @@
-# 🏆 Core Experience — Demand Forecasting & Supply Chain Intelligence (Finalist Project)
-
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
-![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange?style=for-the-badge)
-![XGBoost](https://img.shields.io/badge/XGBoost-Optimized-green?style=for-the-badge)
-![Time Series](https://img.shields.io/badge/Time-Series-Forecasting-purple?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Finalist%20Competition-gold?style=for-the-badge)
+# 📦 Demand Forecasting & Supply Chain Intelligence
 
-### 🟡 Competition Project (Data Challenge / Hackathon)
+### Machine Learning and Time Series Analytics for Demand Prediction and Supply Chain Optimization
 
 🏆 **Finalist — Big Data Analytics Competition (FESMARO), Universitas Negeri Malang 2025**
 
-### 📦 Data Science | Forecasting | Supply Chain Analytics
+![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikitlearn)
+![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-22C55E?style=for-the-badge)
+![Time Series](https://img.shields.io/badge/Time%20Series-Forecasting-8B5CF6?style=for-the-badge)
+![Supply Chain](https://img.shields.io/badge/Supply%20Chain-Analytics-6366F1?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Finalist-success?style=for-the-badge)
+
+### 🟡 Competition Project (Data Challenge / Hackathon)
+
+📍 Big Data Analytics Competition (FESMARO), Universitas Negeri Malang 2025
 
 </div>
 
 ---
 
-## 🧠 Problem Background
+# 🖥️ Project Visualization
 
-In modern supply chains, **accurate demand forecasting is critical** for maintaining operational efficiency.  
-However, one of the most challenging scenarios occurs when a **high-impact product is discontinued**, leading to:
+![Demand Forecasting Overview](assets/time_series_comparison.png)
 
-- 📉 Sudden and significant demand drops  
-- 📦 Inventory imbalance (overstock / understock)  
-- ⚠️ Disruption in planning and distribution  
-
-> In this case study, demand dropped **more than 80%** due to product discontinuation.
+> An end-to-end forecasting and supply chain analytics project designed to predict product demand, detect structural disruptions, and generate strategic recommendations for inventory and distribution planning.
 
 ---
 
-## 🎯 Objective
+# 🧠 Project Overview
 
-This project is designed to:
+This project develops a data-driven demand forecasting system to predict monthly product demand and analyze the operational impact of product discontinuation within a supply chain environment.
 
-- Predict **monthly demand with high accuracy**  
-- Detect **structural changes in demand patterns**  
-- Identify **key features influencing demand behavior**  
-- Deliver **actionable insights for supply chain strategy**
+The solution combines statistical forecasting, machine learning, feature engineering, and model interpretation to uncover key drivers of demand behavior and support proactive supply chain decision-making.
 
----
-
-## ⚙️ Analytical Pipeline
-
-The analytical workflow follows a structured data science lifecycle:
-
-1. **Data Exploration**
-   - Analyze demand patterns and anomalies  
-   - Identify structural breaks in time series  
-
-2. **Data Preprocessing**
-   - Handle missing values  
-   - Encode categorical variables  
-   - Aggregate data into monthly format  
-
-3. **Feature Engineering**
-   - Create business-driven features:
-     - `late_delivery_risk`
-     - `profit_ratio`
-     - `is_discontinued`  
-
-4. **Model Development**
-   - Statistical Models: SARIMA, Holt-Winters  
-   - Machine Learning Models:
-     - Linear Regression, Ridge, Lasso  
-     - Random Forest, Gradient Boosting  
-     - XGBoost & Tuned XGBoost  
-
-5. **Model Evaluation**
-   - Performance metric: **MAPE (Mean Absolute Percentage Error)**  
-
-6. **Model Interpretation**
-   - Feature importance analysis  
-   - Identifying key demand drivers  
-
-7. **Insight & Recommendation**
-   - Translate results into business strategies  
+The project was developed as part of a team that reached the **Finalist** stage in the **Big Data Analytics Competition (FESMARO) 2025**. The original project materials are documented in the repository provided by the team. :contentReference[oaicite:0]{index=0}
 
 ---
 
-## 📊 Exploratory Data Analysis
+# 🎯 Project Objectives
 
-### 🔹 Demand Time Series Pattern
-![Time Series](assets/time_series_comparison.png)
-
-**Insight**
-- Demand is relatively stable across periods  
-- A sharp decline occurs in the final period  
-- Indicates a **structural break caused by product discontinuation**
+- Predict monthly demand with high accuracy.
+- Detect structural changes in demand patterns.
+- Compare time series and machine learning models.
+- Identify the most influential business features.
+- Generate actionable supply chain recommendations.
 
 ---
 
-### 🔹 Product Contribution Analysis
-![Seasonal](assets/top_product_demand.png)
+# 🗂️ Dataset Overview
 
-**Insight**
-- *Perfect Rip Deck* contributes **>20% of total demand**  
-- Becomes the **primary driver of demand collapse**
-
----
-
-## 🧪 Data Preparation & Feature Engineering
-
-Key transformations:
-
-- Data cleaning and aggregation  
-- Feature construction based on business logic  
-
-📌 Important Features:
-- `Product_ID`  
-- `Discount`  
-- `Late_delivery_risk`  
-
-These features significantly influence demand prediction.
+| Attribute | Value |
+|---------|-------|
+| Dataset | DataCo Smart Supply Chain |
+| Domain | Supply Chain Analytics |
+| Forecast Target | Monthly Product Demand |
+| Key Features | Product ID, Discount, Late Delivery Risk |
+| Performance Metric | Mean Absolute Percentage Error (MAPE) |
 
 ---
 
-## 🤖 Modeling & Evaluation
+# 🧪 Methodology
 
-### 🔹 Model Performance Comparison
-![MAPE](assets/model_comparison.png)
+```text
+Data Exploration
+        ↓
+Data Cleaning & Aggregation
+        ↓
+Feature Engineering
+        ↓
+Time Series Modeling (SARIMA, Holt-Winters)
+        ↓
+Machine Learning Modeling
+        ↓
+Hyperparameter Tuning
+        ↓
+Model Evaluation (MAPE)
+        ↓
+Feature Importance Analysis
+        ↓
+Strategic Recommendation
+```
+
+---
+
+# 📈 Model Performance
 
 | Model | MAPE |
-|------|------|
-| 🥇 Tuned XGBoost | **0.45** |
+|------|-----:|
+| Tuned XGBoost | **0.45** |
 | Random Forest | 0.48 |
 | XGBoost | 0.47 |
 | Gradient Boosting | 0.62 |
@@ -132,98 +98,129 @@ These features significantly influence demand prediction.
 | Holt-Winters | 2.59 |
 | SARIMA | 2.62 |
 
----
-
-### 🔹 Actual vs Predicted (XGBoost)
-![Scatter](assets/prediction_comparison.png)
-
-**Insight**
-- Predictions align closely with actual values  
-- Indicates **high precision and strong generalization**
+> 🏆 **Best Model:** Tuned XGBoost
 
 ---
 
-### 🔹 Time Series Model Comparison
-![TS](assets/time_series_comparison.png)
+# ✨ Key Features
 
-**Insight**
-- Traditional models fail to capture structural change  
-- Machine learning models are more adaptive and robust  
-
----
-
-## 📈 Key Findings
-
-- **Tuned XGBoost is the best-performing model**  
-- Demand patterns are **non-linear and event-driven**  
-- Traditional time series models are insufficient for disruption scenarios  
-
-📌 Key Drivers:
-- Product dependency  
-- Discount strategy  
-- Delivery risk  
+- 📈 Monthly demand forecasting
+- 🔍 Structural break detection
+- 🤖 Machine learning model comparison
+- 📊 Feature importance analysis
+- 📦 Inventory risk insights
+- 🧠 Strategic supply chain recommendations
 
 ---
 
-## 💡 Strategic Insights
+# 🖼️ Additional Insights
 
-- Demand collapse can be **anticipated with the right features**  
-- Machine learning enables **early detection of risk signals**  
-- Businesses can shift from **reactive to proactive decision-making**
+## 📈 Model Performance Comparison
+![Model Comparison](assets/model_comparison.png)
 
----
+## 🎯 Actual vs Predicted
+![Prediction Comparison](assets/prediction_comparison.png)
 
-## 🚀 Business Impact
+## 📦 Top Product Demand Contribution
+![Top Product Demand](assets/top_product_demand.png)
 
-This solution offers measurable benefits:
-
-- 📈 +30% improvement in forecasting accuracy  
-- 📦 20% reduction in overstock risk  
-- ⚠️ Up to 80% mitigation of demand loss  
+## 📉 Time Series Analysis
+![Time Series Analysis](assets/time_series_comparison.png)
 
 ---
 
-## 👨‍💻 Contribution
+# 🔍 Key Findings
+
+- Tuned XGBoost achieved the lowest forecasting error.
+- Demand patterns were highly non-linear and event-driven.
+- Product discontinuation caused a demand decline of more than 80%.
+- Traditional time series models struggled to capture structural disruption.
+- Product dependency, discount strategy, and delivery risk were the primary demand drivers.
+
+---
+
+# 👥 Team & Contributions
 
 | Name | Role |
 |------|------|
-| **Muhammad Wildan Nabila** | Data Scientist / ML Engineer |
+| **Muhammad Wildan Nabila** | Data Scientist / Machine Learning Engineer |
 | Anindya Samantha Prayoga | Data Scientist |
 | Muhammad Firdig Haqqy Abdillah | Data Analyst |
 
 ---
 
-## 🔗 Official Repository
+# 👨‍💻 My Contribution
 
-👉 https://github.com/anindyaprayoga/dataco-supply-chain-1
+My primary responsibilities in this project included:
 
----
-
-## 🧩 Tech Stack
-
-- Python (Pandas, NumPy)  
-- Machine Learning (Scikit-learn, XGBoost)  
-- Time Series (Statsmodels)  
-- Visualization (Matplotlib, Seaborn)  
+- Data exploration and preprocessing.
+- Feature engineering based on business logic.
+- Machine learning model development and evaluation.
+- Model comparison and performance interpretation.
+- Strategic insight generation and documentation.
 
 ---
 
-## ⚠️ Notes
+# 🚧 Key Challenge
 
-- Dataset: DataCo Smart Supply Chain (competition dataset)  
-- No external data used  
-- Research-oriented and experimental  
+**Challenge:** Forecasting demand under extreme structural changes caused by product discontinuation.
+
+**Solution:** We engineered business-driven features and applied tuned XGBoost to capture non-linear relationships and abrupt shifts in demand patterns.
+
+---
+
+# 💼 Business Impact
+
+This solution can help organizations to:
+
+- Improve forecasting accuracy.
+- Reduce overstock and stockout risk.
+- Detect early warning signals of demand collapse.
+- Optimize inventory and distribution planning.
+- Support proactive supply chain decision-making.
 
 ---
 
-## 🏁 Conclusion
+# 🔗 Official Repository
 
-Tuned XGBoost demonstrates superior performance in forecasting demand under dynamic and disrupted conditions, outperforming traditional time series models. 
-
-The findings confirm that demand is not random, but driven by key factors such as product dependency, discount strategy, and delivery risk. 
-
-This approach enables businesses to shift from reactive forecasting to **proactive, data-driven supply chain decision-making**.
-
-This project demonstrates how **data-driven approaches can transform supply chain operations into intelligent, adaptive systems**.
+https://github.com/anindyaprayoga/dataco-supply-chain-1
 
 ---
+
+# 🛠️ Technology Stack
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- Statsmodels
+- Matplotlib
+
+---
+
+# 🎯 Career Relevance
+
+Relevant for roles in:
+
+- Data Analyst
+- Data Scientist
+- Machine Learning Engineer
+- Supply Chain Analyst
+- Operations Analyst
+- Business Intelligence Analyst
+
+---
+
+# 👨‍💻 Author
+
+**Muhammad Wildan Nabila**  
+Data Scientist / Machine Learning Engineer — Competition Team
+
+---
+
+<div align="center">
+
+### 📦 Transforming Historical Demand Data into Strategic Supply Chain Intelligence
+
+</div>
