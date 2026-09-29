@@ -1,226 +1,346 @@
 <div align="center">
 
-# 📦 Demand Forecasting & Supply Chain Intelligence
+# Demand Forecasting & Supply Chain Intelligence
 
-### Machine Learning and Time Series Analytics for Demand Prediction and Supply Chain Optimization
+**Machine Learning · Time Series Forecasting · Supply Chain Analytics**
 
-🏆 **Finalist — Big Data Analytics Competition (FESMARO), Universitas Negeri Malang 2025**
+<br>
 
-![Python](https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?style=for-the-badge&logo=scikitlearn)
-![XGBoost](https://img.shields.io/badge/XGBoost-Gradient%20Boosting-22C55E?style=for-the-badge)
-![Time Series](https://img.shields.io/badge/Time%20Series-Forecasting-8B5CF6?style=for-the-badge)
-![Supply Chain](https://img.shields.io/badge/Supply%20Chain-Analytics-6366F1?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Finalist-success?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-EB5B25?style=flat-square&logo=xgboost&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
 
-### 🟡 Competition Project (Data Challenge / Hackathon)
+<br>
 
-📍 Big Data Analytics Competition (FESMARO), Universitas Negeri Malang 2025
+<img src="https://img.shields.io/badge/COMPETITION-FESMARO%202025-7C3AED?style=for-the-badge" alt="FESMARO 2025">
+<img src="https://img.shields.io/badge/RESULT-FINALIST-22C55E?style=for-the-badge" alt="Finalist">
+
+<br><br>
+
+> **Predicting monthly product demand and translating forecasting signals into actionable supply-chain intelligence.**
+
+<br>
+
+[![Original Repository](https://img.shields.io/badge/Original%20Project-View%20Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anindyaprayoga/dataco-supply-chain-1)
 
 </div>
 
 ---
 
-# 🖥️ Project Visualization
+## Project at a Glance
 
-![Demand Forecasting Overview](assets/time_series_comparison.png)
-
-> An end-to-end forecasting and supply chain analytics project designed to predict product demand, detect structural disruptions, and generate strategic recommendations for inventory and distribution planning.
-
----
-
-# 🧠 Project Overview
-
-This project develops a data-driven demand forecasting system to predict monthly product demand and analyze the operational impact of product discontinuation within a supply chain environment.
-
-The solution combines statistical forecasting, machine learning, feature engineering, and model interpretation to uncover key drivers of demand behavior and support proactive supply chain decision-making.
-
-The project was developed as part of a team that reached the **Finalist** stage in the **Big Data Analytics Competition (FESMARO) 2025**. The original project materials are documented in the repository provided by the team. :contentReference[oaicite:0]{index=0}
-
----
-
-# 🎯 Project Objectives
-
-- Predict monthly demand with high accuracy.
-- Detect structural changes in demand patterns.
-- Compare time series and machine learning models.
-- Identify the most influential business features.
-- Generate actionable supply chain recommendations.
+<table>
+<tr>
+<td align="center" width="25%">
+<strong>Forecasting</strong><br>
+Monthly Demand
+</td>
+<td align="center" width="25%">
+<strong>Best Model</strong><br>
+Tuned XGBoost
+</td>
+<td align="center" width="25%">
+<strong>Evaluation</strong><br>
+MAPE
+</td>
+<td align="center" width="25%">
+<strong>Achievement</strong><br>
+FESMARO Finalist
+</td>
+</tr>
+</table>
 
 ---
 
-# 🗂️ Dataset Overview
+## Why This Project Matters
 
-| Attribute | Value |
-|---------|-------|
-| Dataset | DataCo Smart Supply Chain |
-| Domain | Supply Chain Analytics |
-| Forecast Target | Monthly Product Demand |
-| Key Features | Product ID, Discount, Late Delivery Risk |
-| Performance Metric | Mean Absolute Percentage Error (MAPE) |
+Supply-chain forecasting becomes considerably more difficult when historical demand is disrupted by nonlinear behavior, operational factors, or product discontinuation.
+
+This project combines **statistical time-series forecasting and machine learning** to investigate which modeling strategy is better able to represent these changing demand patterns.
+
+> **Core question:** How can historical supply-chain data be transformed into reliable demand forecasts when the underlying demand structure changes?
 
 ---
 
-# 🧪 Methodology
+## Analytical Pipeline
 
 ```text
-Data Exploration
-        ↓
-Data Cleaning & Aggregation
-        ↓
-Feature Engineering
-        ↓
-Time Series Modeling (SARIMA, Holt-Winters)
-        ↓
-Machine Learning Modeling
-        ↓
-Hyperparameter Tuning
-        ↓
-Model Evaluation (MAPE)
-        ↓
-Feature Importance Analysis
-        ↓
-Strategic Recommendation
+                         SUPPLY CHAIN DATA
+                                │
+                                ▼
+                     Cleaning & Aggregation
+                                │
+                                ▼
+                       Feature Engineering
+                                │
+                  ┌─────────────┴─────────────┐
+                  ▼                           ▼
+          TIME-SERIES MODELS            MACHINE LEARNING
+          SARIMA                        Random Forest
+          Holt-Winters                  Gradient Boosting
+                                       XGBoost
+                  │                           │
+                  └─────────────┬─────────────┘
+                                ▼
+                       Model Benchmarking
+                              MAPE
+                                │
+                                ▼
+                       Tuned XGBoost
+                                │
+                                ▼
+                   Supply Chain Intelligence
 ```
 
 ---
 
-# 📈 Model Performance
+## Model Benchmark
 
-| Model | MAPE |
-|------|-----:|
-| Tuned XGBoost | **0.45** |
-| Random Forest | 0.48 |
-| XGBoost | 0.47 |
-| Gradient Boosting | 0.62 |
-| Linear Models | 0.75 – 0.89 |
-| Holt-Winters | 2.59 |
-| SARIMA | 2.62 |
+| Model | MAPE | Relative Performance |
+|:---|---:|:---|
+| **Tuned XGBoost** | **0.45** | **Best observed** |
+| XGBoost | 0.47 | Strong |
+| Random Forest | 0.48 | Strong |
+| Gradient Boosting | 0.62 | Moderate |
+| Linear Models | 0.75–0.89 | Baseline |
+| Holt-Winters | 2.59 | Higher error |
+| SARIMA | 2.62 | Higher error |
 
-> 🏆 **Best Model:** Tuned XGBoost
+> **Result:** Tuned XGBoost produced the lowest forecasting error among the evaluated approaches.
 
----
-
-# ✨ Key Features
-
-- 📈 Monthly demand forecasting
-- 🔍 Structural break detection
-- 🤖 Machine learning model comparison
-- 📊 Feature importance analysis
-- 📦 Inventory risk insights
-- 🧠 Strategic supply chain recommendations
+> **Metric validation:** If these values were generated using `sklearn.metrics.mean_absolute_percentage_error`, `0.45` corresponds to approximately **45% MAPE**. Verify the implementation before presenting the value as a percentage.
 
 ---
 
-# 🖼️ Additional Insights
+## Visual Analytics
 
-## 📈 Model Performance Comparison
-![Model Comparison](assets/model_comparison.png)
+### Actual vs. Predicted Demand
 
-## 🎯 Actual vs Predicted
-![Prediction Comparison](assets/prediction_comparison.png)
+<p align="center">
+  <img src="assets/prediction_comparison.png" width="850" alt="Actual versus predicted monthly demand">
+</p>
 
-## 📦 Top Product Demand Contribution
-![Top Product Demand](assets/top_product_demand.png)
+The comparison shows how closely model predictions follow observed monthly demand and where forecasting errors become more pronounced.
 
-## 📉 Time Series Analysis
-![Time Series Analysis](assets/time_series_comparison.png)
+### Model Performance
+
+<p align="center">
+  <img src="assets/model_comparison.png" width="850" alt="Forecasting model performance comparison">
+</p>
+
+The experiment indicates that the evaluated machine-learning models achieved lower forecasting errors than the classical time-series approaches under the analyzed conditions.
+
+### Product Demand Contribution
+
+<p align="center">
+  <img src="assets/top_product_demand.png" width="850" alt="Top product demand contribution">
+</p>
+
+Product-level analysis highlights demand concentration and provides additional context for inventory prioritization and product-level planning.
+
+### Temporal Demand Behavior
+
+<p align="center">
+  <img src="assets/time_series_comparison.png" width="850" alt="Monthly demand time-series analysis">
+</p>
+
+The temporal analysis reveals substantial changes in historical demand behavior, including periods where previous demand patterns become less representative of subsequent observations.
 
 ---
 
-# 🔍 Key Findings
+## Key Insights
 
-- Tuned XGBoost achieved the lowest forecasting error.
-- Demand patterns were highly non-linear and event-driven.
-- Product discontinuation caused a demand decline of more than 80%.
-- Traditional time series models struggled to capture structural disruption.
-- Product dependency, discount strategy, and delivery risk were the primary demand drivers.
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### 01 · Predictive Performance
+
+**Tuned XGBoost achieved the lowest observed forecasting error** among the evaluated models.
+
+The result indicates that nonlinear relationships and engineered operational features provided useful predictive information.
+
+</td>
+<td width="50%" valign="top">
+
+### 02 · Structural Disruption
+
+Demand declined by **more than 80%** around the investigated product-discontinuation event.
+
+This represents a substantial departure from preceding historical behavior.
+
+</td>
+</tr>
+
+<tr>
+<td width="50%" valign="top">
+
+### 03 · Time-Series Limitation
+
+SARIMA and Holt-Winters produced substantially higher errors in this experiment.
+
+Historical temporal structure alone was insufficient to represent the observed disruption effectively.
+
+</td>
+<td width="50%" valign="top">
+
+### 04 · Operational Signals
+
+Product characteristics, discount information, delivery risk, and historical demand provided additional analytical context for modeling demand variation.
+
+</td>
+</tr>
+</table>
 
 ---
 
-# 👥 Team & Contributions
+## From Prediction to Decision Support
 
-| Name | Role |
-|------|------|
-| **Muhammad Wildan Nabila** | Data Scientist / Machine Learning Engineer |
+```text
+FORECAST SIGNAL
+      │
+      ├── Demand ↑ ───────► Inventory Readiness
+      │
+      ├── Demand ↓ ───────► Overstock Risk Review
+      │
+      └── Structural Shift ► Forecast Assumption Review
+                                  │
+                                  ▼
+                         OPERATIONAL DECISION
+```
+
+| Analytical Signal | Potential Decision Use |
+|---|---|
+| Demand increase | Inventory and capacity preparation |
+| Demand decline | Excess-stock risk assessment |
+| Structural shift | Forecast-model reassessment |
+| Product concentration | Product-level prioritization |
+| Delivery-risk signal | Fulfillment and distribution review |
+
+> These are **potential decision-support applications**, not measured post-deployment business outcomes.
+
+---
+
+## Technical Challenge
+
+**Challenge**
+
+Forecasting demand under extreme structural change caused by product discontinuation.
+
+**Approach**
+
+Business-oriented feature engineering was combined with comparative modeling and tuned gradient boosting to capture nonlinear relationships and abrupt changes that were difficult for conventional time-series models to represent.
+
+---
+
+## My Contribution
+
+**Muhammad Wildan Nabila — Data Scientist / Machine Learning Engineer**
+
+- Exploratory data analysis and preprocessing
+- Business-oriented feature engineering
+- Machine learning model development
+- Model evaluation and benchmarking
+- Forecast-performance interpretation
+- Structural demand analysis
+- Supply-chain insight generation
+- Technical documentation and competition deliverables
+
+---
+
+## Team
+
+| Member | Role |
+|---|---|
+| **Muhammad Wildan Nabila** | **Data Scientist / Machine Learning Engineer** |
 | Anindya Samantha Prayoga | Data Scientist |
 | Muhammad Firdig Haqqy Abdillah | Data Analyst |
 
----
-
-# 👨‍💻 My Contribution
-
-My primary responsibilities in this project included:
-
-- Data exploration and preprocessing.
-- Feature engineering based on business logic.
-- Machine learning model development and evaluation.
-- Model comparison and performance interpretation.
-- Strategic insight generation and documentation.
+Developed collaboratively for the **Big Data Analytics Competition (FESMARO), Universitas Negeri Malang 2025**, where the team reached the **Finalist** stage.
 
 ---
 
-# 🚧 Key Challenge
+## Technology Ecosystem
 
-**Challenge:** Forecasting demand under extreme structural changes caused by product discontinuation.
+<div align="center">
 
-**Solution:** We engineered business-driven features and applied tuned XGBoost to capture non-linear relationships and abrupt shifts in demand patterns.
+<img src="https://skillicons.dev/icons?i=python" height="48" alt="Python">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/numpy/013243" height="43" alt="NumPy">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/pandas/150458" height="43" alt="Pandas">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/scikitlearn/F7931E" height="43" alt="Scikit-learn">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/jupyter/F37626" height="43" alt="Jupyter">
+&nbsp;&nbsp;
+<img src="https://cdn.simpleicons.org/github/ffffff" height="43" alt="GitHub">
 
----
+<br><br>
 
-# 💼 Business Impact
+`Python` · `NumPy` · `Pandas` · `Scikit-learn` · `XGBoost` · `Statsmodels` · `Matplotlib` · `Jupyter`
 
-This solution can help organizations to:
-
-- Improve forecasting accuracy.
-- Reduce overstock and stockout risk.
-- Detect early warning signals of demand collapse.
-- Optimize inventory and distribution planning.
-- Support proactive supply chain decision-making.
-
----
-
-# 🔗 Official Repository
-
-https://github.com/anindyaprayoga/dataco-supply-chain-1
+</div>
 
 ---
 
-# 🛠️ Technology Stack
+## Repository Structure
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- XGBoost
-- Statsmodels
-- Matplotlib
-
----
-
-# 🎯 Career Relevance
-
-Relevant for roles in:
-
-- Data Analyst
-- Data Scientist
-- Machine Learning Engineer
-- Supply Chain Analyst
-- Operations Analyst
-- Business Intelligence Analyst
+```text
+demand-forecasting-supply-chain/
+│
+├── assets/
+│   ├── model_comparison.png
+│   ├── prediction_comparison.png
+│   ├── time_series_comparison.png
+│   └── top_product_demand.png
+│
+├── data/
+├── notebooks/
+├── src/
+├── results/
+│
+├── requirements.txt
+├── LICENSE
+└── README.md
+```
 
 ---
 
-# 👨‍💻 Author
+## Project Provenance
 
-**Muhammad Wildan Nabila**  
-Data Scientist / Machine Learning Engineer — Competition Team
+This repository documents **Muhammad Wildan Nabila's contribution and portfolio representation** of the collaborative competition project.
+
+<div align="center">
+
+[![Original Repository](https://img.shields.io/badge/GitHub-Original%20Competition%20Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/anindyaprayoga/dataco-supply-chain-1)
+
+</div>
+
+---
+
+## Project Summary
+
+| | |
+|---|---|
+| **Problem** | Demand forecasting under structural disruption |
+| **Approach** | Time Series + Machine Learning |
+| **Best Model** | Tuned XGBoost |
+| **Analytical Value** | Demand forecasting and structural-change analysis |
+| **Decision Context** | Inventory, distribution, and demand-risk assessment |
+| **Achievement** | **FESMARO 2025 Finalist** |
 
 ---
 
 <div align="center">
 
-### 📦 Transforming Historical Demand Data into Strategic Supply Chain Intelligence
+### Historical Data → Predictive Modeling → Supply Chain Intelligence
+
+**Muhammad Wildan Nabila**
+
+Data Science · Machine Learning · Data Analytics
 
 </div>
